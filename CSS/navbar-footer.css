@@ -52,6 +52,12 @@
   border-radius: 2px;
 }
 
+nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color:white;
+}
+
 .footer {
   background: #222;
   color: #fff;
