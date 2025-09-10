@@ -1,11 +1,204 @@
+.hero-section {
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+}
+.hero-content {
+	display: flex;
+	flex-direction: row;
+	gap: 48px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	max-width: 480px;
+}
+.hero-title {
+	font-size: 2.5rem;
+	font-family: 'Shadows Into Light', cursive;
+	color: #222;
+	margin-bottom: 0.5rem;
+}
+.hero-subtitle {
+	font-size: 1.1rem;
+	color: #444;
+	font-weight: 500;
+}
+.hero-animated-text {
+	height: 48px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+.text-slide {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #222;
+	opacity: 0;
+	animation: textSlideAnim 12s linear infinite;
+}
+.text-slide:nth-child(1) { animation-delay: 0s; }
+.text-slide:nth-child(2) { animation-delay: 2s; }
+.text-slide:nth-child(3) { animation-delay: 4s; }
+.text-slide:nth-child(4) { animation-delay: 6s; }
+.text-slide:nth-child(5) { animation-delay: 8s; }
+.text-slide:nth-child(6) { animation-delay: 10s; }
+@keyframes textSlideAnim {
+	0% { opacity: 0; transform: translateY(20px) scale(0.9); }
+	5% { opacity: 1; transform: translateY(0) scale(1); }
+	20% { opacity: 1; }
+	25% { opacity: 0; transform: translateY(-20px) scale(0.9); }
+	100% { opacity: 0; }
+}
+.hero-buttons {
+	display: flex;
+	gap: 16px;
+}
+.btn {
+	padding: 0.8rem 1.6rem;
+	border-radius: 12px;
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s;
+	text-decoration: none;
+	border: 1px solid #222;
+	background: #fff;
+	color: #222;
+}
+.btn-primary {
+	background: #222;
+	color: #fff;
+}
+.btn-primary:hover {
+	background: #444;
+	color: #fff;
+}
+.btn-secondary {
+	background: #fff;
+	color: #222;
+}
+.btn-secondary:hover {
+	background: #eee;
+	color: #222;
+}
+.hero-image-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero-image-glass {
+	padding: 8px;
+	background: #f5f5f5;
+	border-radius: 24px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.hero-image {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 16px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.tech-banner-section {
+	width: 100vw;
+	background: #fff;
+	padding: 32px 0 24px 0;
+	border-top: 1px solid #e5e7eb;
+	position: relative;
+	overflow: hidden;
+    margin-bottom:10vw;
+}
+.tech-banner-title {
+	text-align: center;
+	margin-bottom: 18px;
+}
+.tech-banner-title h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #222;
+	font-family: 'Shadows Into Light', cursive;
+}
+.tech-banner-title p {
+	color: #555;
+	font-size: 1rem;
+}
+.tech-banner-scroll {
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
+}
+.tech-banner-track {
+	display: flex;
+	gap: 24px;
+	animation: scrollBanner 18s linear infinite;
+}
+.tech-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: #fff;
+	border-radius: 14px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	border: 1px solid #e5e7eb;
+	padding: 10px 20px;
+	font-size: 1rem;
+	font-weight: 500;
+	color: #222;
+	min-width: 100px;
+	transition: box-shadow 0.3s, transform 0.3s;
+}
+.tech-item img {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+}
+.tech-item:hover {
+	box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+	transform: scale(1.05);
+}
+@keyframes scrollBanner {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 900px) {
+	.hero-content {
+		flex-direction: column;
+		gap: 32px;
+	}
+	.hero-image {
+		width: 120px;
+		height: 120px;
+	}
+}
 body {
 	margin: 0;
 	padding: 0;
 	width: 100vw;
 	box-sizing: border-box;
-    font-family: 'Shadows Into Light', cursive;
+	font-family: 'Shadows Into Light', cursive;
+	background: #fff;
+	color: #222;
 }
-
 main {
 	margin: 0;
 	padding: 0;
