@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +11,47 @@
 
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main Navigation">
         <div class="navbar-logo">Kenneth</div>
-        <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
-        <label for="navbar-toggle" class="navbar-icon">
+        <input type="checkbox" id="navbar-toggle" class="navbar-toggle" aria-label="Toggle navigation menu">
+        <label for="navbar-toggle" class="navbar-icon" aria-hidden="true">
             <span></span>
             <span></span>
             <span></span>
         </label>
         <ul class="navbar-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="about.html" class="active" aria-current="page">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <!-- Konten about -->
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-image-glass">
+                    <img src="../ASSETS/pasphoto.png" alt="Kenneth's profile photo" class="about-image" />
+                </div>
+                <div class="about-text">
+                    <h1 class="about-title">Hi, I'm Kenneth</h1>
+                    <p class="about-desc">
+                        I'm an Informatics student passionate about the latest technology trends. I love learning new things, collaborating, and building impactful digital solutions.
+                    </p>
+                    <div class="about-skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>React, Node.js</li>
+                            <li>C++, C#, C, Java</li>
+                            <li>Python</li>
+                            <li>Git &amp; Version Control</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
     </main>
     <footer class="footer">
         <p>&copy; 2025 Kenneth. All rights reserved.</p>
