@@ -1,3 +1,23 @@
+.modal-link-btn {
+    display: inline-block;
+    margin: 1em 0 0.5em 0;
+    padding: 0.8em 2em;
+    font-size: 1.08rem;
+    font-weight: bold;
+    color: #222;
+    background: linear-gradient(90deg, #00e6a6 0%, #ace2d2 100%);
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #00e6a6cc;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.modal-link-btn:hover {
+    background: linear-gradient(90deg, #00e6a6cc 0%, #ace2d2cc 100%);
+    color: #fff;
+    box-shadow: 0 4px 24px #00e6a6cc;
+    text-decoration: underline;
+}
 .modal-content {
     position: relative;
     background: #222c;
@@ -146,7 +166,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 60vh;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 }
 
 @media (min-width: 601px) {
