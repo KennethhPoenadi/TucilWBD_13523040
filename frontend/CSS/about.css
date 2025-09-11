@@ -44,12 +44,29 @@ main {
     align-items: center;
 }
 .about-image {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 24px;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 24px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 0 24px #00e6a6cc;
+        transition: transform 0.8s cubic-bezier(.4,0,.2,1), box-shadow 0.8s cubic-bezier(.4,0,.2,1);
+        animation: aboutGlow 2.5s infinite alternate;
+}
+
+@keyframes aboutGlow {
+    0% {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 0 12px #00e6a6cc;
+    }
+    100% {
+        box-shadow: 0 2px 24px #00e6a6cc, 0 0 32px #00e6a6cc;
+    }
+}
+
+.about-image:hover {
+        transform: rotate(-8deg) scale(1.08);
+        box-shadow: 0 2px 32px #00e6a6cc, 0 0 48px #00e6a6cc;
+        animation-play-state: paused;
 }
 .about-text {
     display: flex;

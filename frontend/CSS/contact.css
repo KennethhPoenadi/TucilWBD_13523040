@@ -28,15 +28,23 @@ body {
 	gap: 24px;
 }
 .contact-content {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 128px;
-	width: 100%;
-	overflow:hidden;
-	
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 108px;
+    width: 100%;
+	padding-bottom:5vh;
+    overflow: hidden;
 }
+
+@media (min-width: 600px) {
+    .contact-content {
+			padding-right: 5vw;
+			max-width: 120%;
+    }
+}
+
 .contact-info-block {
 	flex: 1;
 	display: flex;
@@ -49,14 +57,31 @@ body {
 	justify-content: center;
 }
 .contact-image {
-	width: 200px;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 50%;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-	background: #fff;
-	border: 2px solid #00e6a6;
-	justify-content: center;
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 50%;
+		background: #fff;
+		border: 2px solid #00e6a6;
+		justify-content: center;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 0 24px #00e6a6cc;
+		transition: transform 0.8s cubic-bezier(.4,0,.2,1), box-shadow 0.8s cubic-bezier(.4,0,.2,1);
+		animation: contactGlow 2.5s infinite alternate;
+}
+
+@keyframes contactGlow {
+	0% {
+		box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 0 12px #00e6a6cc;
+	}
+	100% {
+		box-shadow: 0 2px 24px #00e6a6cc, 0 0 32px #00e6a6cc;
+	}
+}
+
+.contact-image:hover {
+		transform: rotate(-8deg) scale(1.08);
+		box-shadow: 0 2px 32px #00e6a6cc, 0 0 48px #00e6a6cc;
+		animation-play-state: paused;
 }
 .contact-title {
 	font-size: 2rem;
