@@ -32,10 +32,5 @@ frontend/
 2. Buka file `index.html` di browser
 3. Navigasi ke halaman lain melalui navbar
 
-## Catatan
-- Semua animasi dan interaksi dibuat hanya dengan HTML dan CSS
-- Tidak ada JavaScript sama sekali
-- Cocok untuk showcase tugas Web Based Development
-
 ---
 **Author:** Kenneth Poenadi 13523040
