@@ -41,7 +41,7 @@ body {
 @media (min-width: 600px) {
     .contact-content {
 			padding-right: 5vw;
-			max-width: 120%;
+			width: 120%;
     }
 }
 
