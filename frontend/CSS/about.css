@@ -96,8 +96,8 @@ main {
         gap: 32px;
     }
     .about-image {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border-radius: 16px;
     }
 }
@@ -124,8 +124,8 @@ main {
         margin-bottom: 8px;
     }
     .about-image {
-        width: 96px;
-        height: 96px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         border: none;
         box-shadow: 0 2px 8px #00e6a6cc;
