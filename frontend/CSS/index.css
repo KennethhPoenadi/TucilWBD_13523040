@@ -18,20 +18,21 @@
 .hero-text {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
-	max-width: 480px;
+	gap: 3px;
+	max-width: 400px;
 }
 .hero-title {
 	font-size: 2.5rem;
-	font-family: 'Shadows Into Light', cursive;
+	font-family: 'Poppins', 'Shadows Into Light', cursive, sans-serif;
 	color: #00e6a6;
-	text-shadow: 0 0 24px #fff8, 0 0 8px #00e6a6;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.2rem;
 }
 .hero-subtitle {
-	font-size: 2rem;
+	font-size: 1.3rem;
 	color: #ace2d2;
-	font-weight: 1000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
 }
 .hero-animated-text {
 	height: 48px;
@@ -49,6 +50,7 @@
 	color: #fff;
 	opacity: 0;
 	animation: textSlideAnim 12s linear infinite;
+	font-family: 'Poppins', sans-serif;
 }
 .text-slide:nth-child(1) { animation-delay: 0s; }
 .text-slide:nth-child(2) { animation-delay: 2s; }
@@ -136,7 +138,7 @@
 	font-weight: bold;
 	color: #00e6a6;
 	text-shadow: 0 0 24px #fff8, 0 0 8px #00e6a6;
-	font-family: 'Shadows Into Light', cursive;
+	font-family: 'Poppins', sans-serif;
 }
 .tech-banner-title p {
 	color: #ace2d2;
@@ -144,7 +146,7 @@
 }
 .tech-banner-scroll {
 	width: 100vw;
-	overflow: hidden;
+	font-family: 'Shadows Into Light', cursive;
 	position: relative;
 }
 .tech-banner-track {

@@ -10,14 +10,12 @@ body {
     background: #181c24;
     color: #fff;
     }
-
 main {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	box-sizing: border-box;
 }
-
 .about-section {
     min-height: 100vh;
     display: flex;

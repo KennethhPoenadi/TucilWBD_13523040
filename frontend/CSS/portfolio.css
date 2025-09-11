@@ -11,6 +11,7 @@
     box-shadow: 0 2px 12px #00e6a6cc;
     text-decoration: none;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    margin-bottom:5vh;
 }
 .modal-link-btn:hover {
     background: linear-gradient(90deg, #00e6a6cc 0%, #ace2d2cc 100%);
@@ -20,10 +21,10 @@
 }
 .modal-content {
     position: relative;
-    background: #222c;
-    border-radius: 18px;
-    box-shadow: 0 8px 32px #00e6a6cc, 0 4px 24px #0006;
-    padding: 2em 2em 1em 2em;
+    background: #222222;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px #00e6a6cc, 0 4px 24px #0006, 0 0 0 2px #00e6a644;
+    padding: 2.2em 2em 1.2em 2em;
     z-index: 2;
     max-width: 90vw;
     max-height: 80vh;
@@ -33,25 +34,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-	margin-bottom: 10vh;
+    margin-bottom: 10vh;
+    backdrop-filter: blur(12px) saturate(120%);
+    border: 1.5px solid #00e6a6aa;
+    font-family: 'Poppins', sans-serif;
 }
 .modal-content img {
     max-width: 320px;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 16px;
     margin-bottom: 1em;
-    box-shadow: 0 2px 12px #00e6a6cc;
+    box-shadow: 0 4px 18px #00e6a6cc, 0 2px 8px #0006;
+    border: 1.5px solid #00e6a6aa;
 }
 .modal-content h3 {
     font-size: 1.5rem;
     color: #00e6a6;
     margin-bottom: 0.5em;
     text-shadow: 0 0 8px #fff8;
+    font-family: 'Poppins', sans-serif;
 }
 .modal-content p {
     font-size: 1.1rem;
     color: #fff;
     margin-bottom: 1em;
+    font-family: 'Poppins', sans-serif;
 }
 .modal-close {
     position: absolute;
@@ -74,10 +81,13 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-	margin-bottom:10vh;
+    margin-bottom:10vh;
+    opacity: 0;
+    transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
 }
 .modal-toggle:checked + label + .modal-popup {
     display: flex;
+    opacity: 1;
 }
 .modal-bg {
     position: absolute;
@@ -129,11 +139,11 @@ body {
 }
 .portfolio-bg {
     position: absolute;
+    background: url('../ASSETS/pasphoto.png') center/cover no-repeat;
+    opacity: 0.6;
     top: 0; left: 0; right: 0; bottom: 0;
     width: 100vw;
     height: 100%;
-    background: url('ASSETS/pasphoto.png') center/cover no-repeat;
-    opacity: 0.18;
     z-index: 1;
 }
 .portfolio-hero-content {
@@ -144,7 +154,8 @@ body {
 }
 .portfolio-title {
     font-size: 3rem;
-    font-weight: bold;
+    font-family: 'Poppins', 'Shadows Into Light', cursive, sans-serif;
+    font-weight: 900;
     letter-spacing: 2px;
     text-shadow: 0 0 24px #fff8, 0 0 8px #00e6a6;
 }
@@ -158,6 +169,8 @@ body {
 .portfolio-subtitle {
     font-size: 1.3rem;
     color: #ace2d2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     margin-top: 1vh;
 }
 .portfolio-gallery {
@@ -165,8 +178,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 60vh;
-    margin-bottom: 20vh;
+    min-height: 100vh;
+    margin-top: 5vh;
+    padding-bottom: 10vh;
+    background: linear-gradient(120deg, #181c24 60%, #00e6a6 100%);
+
 }
 
 @media (min-width: 601px) {
