@@ -10,44 +10,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-logo">Kenneth</div>
-        <input type="checkbox" id="navbar-toggle" class="navbar-toggle" aria-label="Toggle navigation menu">
-        <label for="navbar-toggle" class="navbar-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul class="navbar-menu">
-            <label for="navbar-toggle" class="navbar-close" aria-label="Close menu">&times;</label>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="navbar-logo">Kenneth</div>
+            <input type="checkbox" id="navbar-toggle" class="navbar-toggle" aria-label="Toggle navigation menu">
+            <label for="navbar-toggle" class="navbar-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navbar-menu">
+                <label for="navbar-toggle" class="navbar-close" aria-label="Close menu">&times;</label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="contact-section">
             <div class="contact-container">
                 <div class="contact-content">
-                    <div class="contact-info-block">
+                    <section class="contact-info-block">
                         <h1 class="contact-title">Contact Me</h1>
                         <p class="contact-desc">Feel free to reach out for collaboration, project inquiries, or anything else!</p>
-                        <div class="contact-info">
-                            <div class="contact-item">
+                        <ul class="contact-info">
+                            <li class="contact-item">
                                 <strong>Email:</strong> <a href="mailto:kennethpoenadi26@gmail.com">kennethpoenadi26@gmail.com</a>
-                            </div>
-                            <div class="contact-item">
+                            </li>
+                            <li class="contact-item">
                                 <strong>Instagram:</strong> <a href="https://instagram.com/kennethpoenadi" target="_blank">@kennethpoenadi</a>
-                            </div>
-                            <div class="contact-item">
+                            </li>
+                            <li class="contact-item">
                                 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kenneth-poenadi-52450429a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">kennethpoenadi</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-image-block">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="contact-image-block">
                         <img src="ASSETS/pasphoto2.jpg" alt="Kenneth's profile photo" class="contact-image" />
-                    </div>
+                    </section>
                 </div>
             </div>
         </section>
